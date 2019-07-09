@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "InternetHabitBuster",
+  "version": "1.0",
+
+  "description": "Opens up a log for your cues, routines, and rewards to help you ID problems",
+    
+  "icons": {
+    "48": "icons/MainIcon48.png"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.netflix.com/*", "*://*.amazon.com/*video*"],
+      "js": ["InternetHabitBuster.js"]
+    }
+  ]
+
+}
